@@ -418,6 +418,162 @@ textarea {
     padding: 10px;
     display: inline-block;
 }
+    /* Experiencias */
+
+    /* Galeria Primavera en NY */
+
+.primGal{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas: 
+    "prim1 prim2 prim3"
+    "prim4 prim5 prim6"
+    "prim7 prim8 prim9";
+    grid-gap: 5px;
+    padding: 30px;
+    background-color: #E3F3F6;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.prim{
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.102);
+    margin: 0 0.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.prim:hover{
+    transform: scale(1.1);
+}
+
+.prim1{
+    grid-area: prim1;
+    background-image: url(../img/Primavera\ \(1\).png);
+}
+.prim2{
+    grid-area: prim2;
+    background-image: url(../img/Primavera\ \(2\).png);
+}
+.prim3{
+    grid-area: prim3;
+    background-image: url(../img/Primavera\ \(3\).png);
+}
+.prim4{
+    grid-area: prim4;
+    background-image: url(../img/Primavera\ \(4\).png);
+}
+.prim5{
+    grid-area: prim5;
+    background-image: url(../img/Primavera\ \(5\).png);
+}
+.prim6{
+    grid-area: prim6;
+    background-image: url(../img/Primavera\ \(6\).png);
+}
+.prim7{
+    grid-area: prim7;
+    background-image: url(../img/Primavera\ \(7\).png);
+}
+.prim8{
+    grid-area: prim8;
+    background-image: url(../img/Primavera\ \(8\).png);
+}
+
+.prim9{
+    grid-area: prim9;
+    background-image: url(../img/Primavera\ \(9\).png);
+}
+
+/* Galeria Walking Tour */
+
+.walkingGal{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas: 
+    "walking1 walking2 walking3 walking4"
+    "walking5 walking6 walking7 walking8"
+    "walking9 walking10 walking11 walking12";
+    grid-gap: 5px;
+    padding: 30px;
+    background-color: #E3F3F6;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.walking{
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.102);
+    margin: 0 0.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.walking:hover{
+    transform: scale(1.1);
+}
+
+.walking1{
+    grid-area: walking1;
+    background-image: url(../img/Walking\ Tour\ \(1\).png);
+}
+.walking2{
+    grid-area: walking2;
+    background-image: url(../img/Walking\ Tour\ \(2\).png);
+}
+.walking3{
+    grid-area: walking3;
+    background-image: url(../img/Walking\ Tour\ \(3\).png);
+}
+.walking4{
+    grid-area: walking4;
+    background-image: url(../img/Walking\ Tour\ \(5\).png);
+}
+.walking5{
+    grid-area: walking5;
+    background-image: url(../img/Walking\ Tour\ \(6\).png);
+}
+.walking6{
+    grid-area: walking6;
+    background-image: url(../img/Walking\ Tour\ \(4\).png);
+}
+.walking7{
+    grid-area: walking7;
+    background-image: url(../img/Walking\ Tour\ \(7\).png);
+}
+.walking8{
+    grid-area: walking8;
+    background-image: url(../img/Walking\ Tour\ \(8\).png);
+}
+
+.walking9{
+    grid-area: walking9;
+    background-image: url(../img/Walking\ Tour\ \(11\).png);
+}
+
+.walking10{
+    grid-area: walking10;
+    background-image: url(../img/Walking\ Tour\ \(9\).png);
+}
+
+.walking11{
+    grid-area: walking11;
+    background-image: url(../img/Walking\ Tour\ \(10\).png);
+}
+
+.walking12{
+    grid-area: walking12;
+    background-image: url(../img/Walking\ Tour\ \(12\).png);
+}
 
 /* Index Queries */
 
@@ -552,6 +708,14 @@ textarea {
     .roofGal{
         grid-template-rows: repeat(3, 200px);
     }
+
+    .primGal{
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    .walkingGal{
+        grid-template-rows: repeat(3, 200px);
+    }
 }
 
 @media only screen and (min-width: 1024px){
@@ -605,4 +769,9 @@ textarea {
     .roofGal{
         width: 50%;
     }
+
+    .primGal{
+        width: 50%;
+    }
 }
+
