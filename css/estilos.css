@@ -21,13 +21,13 @@ body{
 
 
 .logo{
-    width: 80px;
+    width: 60px;
     height: auto;
 }
 
 header{
     background-color: #AEC6CF;
-    padding: 20px;
+    padding: 5px;
     position: sticky;
     z-index: 1000;
     left: 0;
@@ -616,24 +616,27 @@ textarea {
 
 @media only screen and (min-width: 600px){
 
-
-    .logo{
-        width: 100px;
+    .navBarFlex{
+        display: flex;
+        justify-content: start;
     }
+   
+}
+
+@media only screen and (min-width: 768px) {
 
     .navBarFlex{
         display: flex;
         justify-content: center;
     }
 
-    
     .navBarUl li{
-        font-size: medium;
-    
+        font-size: medium; 
     }
 
     .btn-outline-success{
         font-size: medium;
+
     }
 
     footer p{
@@ -645,32 +648,7 @@ textarea {
     }
     
     footer .redes i{
-        font-size: large;
-    }
-    
-}
-
-@media only screen and (min-width: 768px) {
-
-    .navBarUl li{
-        font-size: large; 
-    }
-
-    .btn-outline-success{
-        font-size: large;
-
-    }
-
-    footer p{
-        font-size: large;
-    }
-    
-    footer a{
-        font-size: large;
-    }
-    
-    footer .redes i{
-        font-size: large;
+        font-size: medium;
     }  
     
     .mapaNYC{
@@ -720,12 +698,12 @@ textarea {
 
 @media only screen and (min-width: 1024px){
     .navBarUl li{
-        font-size: x-large;
+        font-size: large;
         padding-left: 50px; 
     } 
 
     .btn-outline-success{
-        font-size: x-large;
+        font-size: large;
     }
 
     .atraccion {
@@ -733,7 +711,7 @@ textarea {
     }
 
     .atraccion h1{
-        font-size: x-large;
+        font-size: large;
         margin: top 20px;
     }
     
@@ -744,7 +722,7 @@ textarea {
     }
     
     .atraccion h2{
-        font-size: x-large;
+        font-size: large;
     }
 
     .textoHeader {
