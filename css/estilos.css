@@ -26,7 +26,6 @@ body{
 }
 
 header{
-    /* background-color: #E3F3F6; */
     background-color: #AEC6CF;
     padding: 20px;
     position: sticky;
@@ -239,6 +238,10 @@ footer .redes i{
 .modal-body{
     background-color: rgba(227, 242, 245, 0.53);
 
+}
+
+.modal-body img{
+    width: 100%;
 }
 
 .modal-header{
@@ -771,6 +774,10 @@ textarea {
     }
 
     .primGal{
+        width: 50%;
+    }
+
+    .walkingGal{
         width: 50%;
     }
 }

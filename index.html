@@ -27,7 +27,7 @@
   <body>
     <!-- Barra de navegación -->
     <header>
-      <nav class="navBar navbar navbar-expand-sm">
+      <nav class="navBar navbar navbar-expand-md">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./img/Logo.png" class="logo" alt="Logo empresa"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -83,7 +83,7 @@
               <div class="card">
                 <img src="./img/Bascket.png" class="card-img-top" alt="Estadio de Bascket">
                 <div class="card-body">
-                  <h3>Ver a los Nicks</h3>
+                  <h3>Ver a los Knicks</h3>
                   <a href="https://www.hellotickets.es/estados-unidos/nueva-york/deportes/entradas-new-york-knicks/242?tap_a=28796-1e3098&tap_s=601345-2aa238&tm_subid1=KnicksBoton1">Ver más</a>
                 </div>
               </div>
@@ -184,6 +184,9 @@
     <!-- Fin carrusel con cards -->
     <!-- Inicio Sección Recomendaciones -->
     <section>
+      <article class="atraccion">
+        <h2>Propuesta gastronómica del mes: "Le Dive"</h2>
+      </article>
       <!-- Inicio Recomendación 1 -->
       <article class="contenedor">
         <div class="galeria">
@@ -211,7 +214,6 @@
         </div>
       </article>
       <div class="atraccion">
-        <h2>Propuesta gastronómica del mes: "Le Dive"</h2>
         <p>
           Ubicado en el Lower East Side de la ciudad de Nueva York, Le Dive
           recrea la clásica experiencia parisina del tabaco, las luces de tubo
@@ -228,6 +230,9 @@
       <!-- Fin Recomendación 1 -->
     </section>
     <section>
+      <article class="atraccion">
+        <h2>Atracción del mes: "Roosevelt Island"</h2>
+      </article>
       <!-- Inicio Recomendación 2 -->
       <article class="contenedor">
         <div class="galeria">
@@ -254,8 +259,7 @@
           </div>
         </div>
       </article>
-      <div class="atraccion">
-        <h2>Atracción del mes: "Roosevelt Island"</h2>
+      <article class="atraccion">
         <p>
           Subir al teleférico de Roosevelt Island, que conecta Manhattan con
           Roosevelt Island, es una de esas experiencias únicas de Nueva York,
@@ -268,26 +272,29 @@
           del siglo XIX y XX, albergó varios hospitales, instituciones
           psiquiátricas y una cárcel.
         </p>
-      </div>
+      </article>
       <!-- Fin Recomendación 2 -->
     </section>
     <!-- Fin Sección Recomendaciones -->
-    <!-- Inicio Mapa Barrios NYC -->
+    <!-- Inicio Banner Subte -->
     <section>
-      <div class="mt-4 p-5 rounded atraccion mapaText" data-bs-toggle="modal" data-bs-target="#modalMapaNyc">
-        <h2>Descubre los 5 barrios de NYC</h2>
-        <p>Haz click sobre el mapa para conocerlos y ver las líneas de subways</p>
-        <iframe
-          class="mapaNYC"
-          width="600"
-          height="373.5"
-          src="https://app.powerbi.com/view?r=eyJrIjoiNzQyZGU3NDktYjE3Zi00OGNlLWE0NDQtYjQ4MDc2ZWU3NTNmIiwidCI6IjBmMTI0NGYzLWZjOWItNDQxOS1iMzYzLTM5MmRhZDk4MjFkMCIsImMiOjR9"
-          frameborder="0"
-          allowfullscreen="true"
-        ></iframe>
-      </div>
+      <article class="contenedor">
+        <div class="atraccion">
+          <h2>Descubre el subte de Nueva York</h2>
+          <p>
+          Haz click sobre la foto y perdete en el mapa</p>
+        </div>
+      </article>
+      <article>
+        <div data-bs-toggle="modal" data-bs-target="#modalMapaNyc">
+          <img
+          src="./img/Estacion Subte (1).jpg"
+          alt="Hotel Sheraton"
+          class="imageEstilo"/>
+        </div>
+      </article>
     </section>
-    <!-- Fin Mapa Barrios NYC -->
+    <!-- Fin Banner Subte -->
     <!-- Inicio modales Subte Mapa NYC -->
     <section>
       <div class="modal" id="modalMapaNyc" tabindex="-1">
@@ -298,10 +305,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <img src="./img/New York Subway.png" alt="Mapa Subte de Nueva York">
-            </div>
-            <div class="modal-footer" style="background-color: #e3f2f587;">
-              <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Cerrar</button>
+              <img src="./img/Subway Map.jpg" alt="Mapa Subte de Nueva York">
             </div>
           </div>
         </div>
