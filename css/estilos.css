@@ -21,7 +21,7 @@ body{
 
 
 .logo{
-    width: 80px;
+    width: 100px;
     height: auto;
 }
 
@@ -620,10 +620,14 @@ textarea {
         display: flex;
         justify-content: start;
     }
-   
+
 }
 
 @media only screen and (min-width: 768px) {
+
+    .logo{
+        width: 125px;
+    }
 
     .navBarFlex{
         display: flex;
