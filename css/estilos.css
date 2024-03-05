@@ -27,14 +27,11 @@ body{
 
 header{
     background-color: #AEC6CF;
-    padding: 10px;
+    padding: 20px;
     position: sticky;
     z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%;
-    max-height: 60px;
-    overflow: hidden;
 }
 
 /* Barra navegación */
