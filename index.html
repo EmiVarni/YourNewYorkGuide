@@ -13,6 +13,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Animación Michalsnik-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Estilos Bootsrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -52,16 +54,16 @@
     <!-- Fin de la Barra de navegación -->
     <!-- Inicio Banner Empresa -->
     <main>
-      <div class="contenedor">
+      <div class="contenedor atraccion">
         <img
           src="./img/Carrusel1.jpg"
           alt="foto panoramica New York"
           class="imageEstilo pic"
         />
       </div>
-        <div class="atraccion">
-          <h1>Your New York Guide</h1>
-          <p>
+      <div class="atraccion">
+        <h1>Your New York Guide</h1>
+        <p>
             New York es una ciudad que puede dejarte sin aliento al verla por
             primera vez, por eso para conocerla, hace falta más que una simple
             empresa de viajes. Hay que estar dispuesto a meterse en sus calles,
@@ -69,8 +71,8 @@
             y peder la respiración a cada paso. Eso es lo que te ofrecemos desde
             "Your New York Guide", una guía que te lleve al más alla de todo, para
             que vivas tu propia experiencia en esta vibrante ciudad.
-          </p>
-        </div>
+        </p>
+      </div>
     </main>
     <!-- Fin Banner Empresa -->
     <!-- Inicio Carrrusel con cards -->
@@ -195,6 +197,7 @@
               src="./img/Le Dive Index1.jpg"
               alt="foto restaurant"
               class="imageEstilo"
+              data-aos="zoom-in"
             />
           </div>
           <div class="img2">
@@ -202,6 +205,7 @@
               src="./img/Le Dive Index2.jpg"
               alt="foto plato de comida"
               class="imageEstilo"
+              data-aos="zoom-in"
             />
           </div>
           <div class="img3">
@@ -209,11 +213,12 @@
               src="./img/Le Dive Index3.jpg"
               alt="foto salón restaurant"
               class="imageEstilo"
+              data-aos="zoom-in"
             />
           </div>
         </div>
       </article>
-      <div class="atraccion">
+      <article class="atraccion">
         <p>
           Ubicado en el Lower East Side de la ciudad de Nueva York, Le Dive
           recrea la clásica experiencia parisina del tabaco, las luces de tubo
@@ -226,7 +231,7 @@
           relativamente asequible, con copas a partir de $13 y botellas a $42.
           Hay pocos lugares mejores para disfrutar de la escena de Dimes Square.
         </p>
-      </div>
+      </article>
       <!-- Fin Recomendación 1 -->
     </section>
     <section>
@@ -241,6 +246,7 @@
               src="./img/RooseveltIsland1.jpg"
               alt="foto telesferico"
               class="imageEstilo"
+              data-aos="zoom-in"
             />
           </div>
           <div class="img2">
@@ -248,6 +254,7 @@
               src="./img/RooseveltIsland3.jpg"
               alt="foto Isla Roosevelt"
               class="imageEstilo"
+              data-aos="zoom-in"
             />
           </div>
           <div class="img3">
@@ -255,6 +262,7 @@
               src="./img/RooseveltIsland2.jpg"
               alt="Foto Discurso Roosevelt"
               class="imageEstilo"
+              data-aos="zoom-in"
             />
           </div>
         </div>
@@ -325,6 +333,11 @@
         <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
     </footer>
+    <!-- JS Animación Michalsnik-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- JS Bootsrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
