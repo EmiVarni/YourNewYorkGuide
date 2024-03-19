@@ -1,0 +1,328 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'variables';
+@import 'titulos';
+@import 'img';
+@import 'cards';
+@import 'grids';
+@import 'mixins';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Formato Mobile First */
+
+/* Header Index */
+
+body {
+    background-color: $color-fondo;
+}
+
+/* Barra navegación */
+
+header {
+    background-color: $color-headfoot;
+    padding: 5px;
+    position: sticky;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+    .navBarFlex {
+        @include flex-star;
+        .navbar-nav {
+            .nav-link {
+                @include flex-inline-block;
+                padding: 6px 6px 3px 6px;
+            }
+        }
+    }
+    button {
+        border: $sin-formato !important;
+        color: transparent;
+    }
+    .navbar-toggler-icon {
+        color: $color-primario;
+        border: $sin-formato;
+        background-color: $color-headfoot;
+    }
+    .navBarUl li {
+        list-style: $sin-formato;
+        font-family: $fuente-nav;
+        font-size: small;
+        margin-bottom: 5px;
+        padding: 5px 10px 5px 10px;
+        a {
+            text-decoration: $sin-formato;
+            color: $color-primario;
+            &:hover {
+            color: $color-hover;
+            }
+        }
+    }    
+}
+
+.btn {
+    background-color: $color-secundario;
+    margin-bottom: 5px;
+    &:hover {
+    background-color: $color-primario;
+    }
+}
+
+.btn-outline-success {
+    font-family: $fuente-nav;
+    font-size: small;
+    color: $color-primario;
+    border: $sin-formato !important;
+}
+
+/* Footer */
+
+footer{
+    /* background-color: #dde9f3; */
+    background-color: $color-headfoot;
+    @include flex-footer;
+    padding: 10px; 
+    .redes i{
+        font-size: small;
+        letter-spacing: 15px;
+        color: $color-primario;
+    }
+    a{
+        font-size: small;
+        text-decoration: $sin-formato;
+        color: $color-primario;
+        p{
+            margin-bottom: 20px;
+            font-family: $fuente-nav;
+            font-size: small;
+            color: $color-primario;
+        }
+    }
+}
+
+/* Main Index */
+
+.atraccion{
+    margin: 5px 10px 10px 20px;
+    p{
+        font-family: $fuente-textos;
+        font-size: small;
+        text-align: justify;
+        color: $color-primario;
+        margin: 5px auto 15px auto;
+        padding: 5px 25px 15px 25px;
+    }
+}
+
+/* Carrusel de cards */
+
+.flexCarrusel {
+    @include flex-center;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Mapa */
+
+/* Modal Mapa Subte */
+
+.modal-body{
+    background-color: $color-fondo;
+    img{
+        width: 100%;
+    }
+}
+.modal-header{
+    background-color: $color-card;
+    .modal-title {
+        font-family: $fuente-principal;
+        font-size: medium;
+        color: $color-primario;
+        margin-top: 10px;
+    }
+}
+
+/* Hospedaje */
+
+/* Cards */
+
+.row {
+    @include flex-center;
+}
+
+.botonHotel a{
+    text-decoration: $sin-formato;
+    @include flex-center;
+    margin-bottom: 80px;
+}
+
+/* Foodie */
+
+/* Galeria Rooftop */
+
+.galBack{
+    background-color: $color-card;
+    background-image: linear-gradient(160deg, $color-card 0%, $color-headfoot 37%, #ffffff 100%);
+
+}
+
+.modal-header{
+    border-bottom: $sin-formato;
+    background-color: rgba(227, 243, 246, 0.530);
+}
+
+/* Contacto */
+
+form{
+    max-width: 600px;
+    width: 50%;
+    margin: 10px auto 0px auto;
+    font-family: $fuente-textos;
+    font-size: medium; 
+    color: $color-primario;
+    label {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: $color-primario;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $color-primario;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: $color-secundario;
+    }
+}
+
+/* Index Queries */
+
+@media only screen and (min-width: 480px){
+    /* Nav Queires */
+    header{
+        .navBarUl li{
+            margin-bottom: 2px;
+            padding: 2px 5px 2px 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px){
+    header{
+        .navBarFlex{
+            @include flex-star;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header{
+        .logo{
+            width: 125px;
+        }
+        .navBarFlex{
+            @include flex-center;
+        }
+        .navBarUl li{
+            font-size: medium; 
+        }
+    } 
+    
+    .btn-outline-success{
+        font-size: medium;
+    }
+        
+    footer {
+        p{
+            font-size: medium;
+        }
+        a{
+            font-size: medium;
+        }
+        .redes i{
+            font-size: medium;
+        } 
+    }  
+    
+    .contenedor{
+        @include flex-center;
+    }
+    .atraccion{
+        margin-left: 100px;
+        margin-right: 100px;
+        p{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    header{
+        .navBarUl li{
+            font-size: large;
+            padding-left: 50px; 
+        } 
+    }
+    .btn-outline-success{
+        font-size: large;
+    }
+    .atraccion {
+        border-bottom: $sin-formato;
+        p{
+            font-size: medium;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+    }
+    .textoHeader {
+        display: flex;
+        transform: translate(2%, -150%);
+        p{
+            font-family: $fuente-textos;
+            text-align: justify;
+            color: $color-card;
+            width: 100%;
+            border: 5px solid rgba(227, 243, 246, 0.63);
+            padding: 20px;
+            background-color: rgba(2, 50, 77, 0.53); 
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+/*Formato, cuerpo y bonotes cards*/
+
+.card{
+    background-color: $color-card;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.102);
+    margin: 0 0.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.card-body{
+    text-align: center;
+    a{
+        background-color: $color-secundario;
+        text-decoration: $sin-formato;
+        border-radius: 10px;
+        font-family: $fuente-principal;
+        font-size: small;
+        color: $color-primario;
+        text-align: center;
+        margin-top: 5px;
+        padding: 10px;
+        display: inline-block;
+    }
+}
+
+.card-body button {
+    background-color: $color-secundario;
+    text-decoration: $sin-formato;
+    border-radius: 10px;
+    font-family: $fuente-principal;
+    font-size: small;
+    color: $color-primario;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    display: inline-block;
+    border: $sin-formato;
+}
+
+.card-body input{
+    background-color: $color-secundario;
+    text-decoration: $sin-formato;
+    border-radius: 10px;
+    font-family: $fuente-principal;
+    font-size: small;
+    color: $color-primario;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    display: inline-block;
+}
