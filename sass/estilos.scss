@@ -109,6 +109,27 @@ footer{
     }
 }
 
+/*Boton subir*/
+
+/* Estilos para el botón de subir */
+
+.scroll-to-top{
+    display: block;
+    font-size: x-large;
+    letter-spacing: 15px;
+    color: $color-primario;
+    padding: 10px; 
+    transition: background-color 0.3s; 
+    position: fixed; 
+    bottom: 20px; 
+    right: -10px; 
+    z-index: 999; 
+}
+
+.scroll-to-top .fa-circle-arrow-up:hover{
+    color: $color-hover;
+}
+
 /* Main Index */
 
 .atraccion{
